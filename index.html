@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#5d1022">
+  <meta name="description" content="A beautiful mobile wedding invitation">
+  <title>Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-ring"></div>
+    <p>Preparing your invitation…</p>
+  </div>
+
+  <button id="musicBtn" class="music-btn" aria-label="Play music">♫</button>
+
+  <main>
+    <!-- Opening -->
+    <section class="hero" id="home">
+      <div class="ornament ornament-top">❦</div>
+      <p class="eyebrow" id="heroEyebrow">Together with their families</p>
+      <h1 id="heroNames">Aliza <span>&amp;</span> Salman</h1>
+      <p class="hero-date" id="heroDate">Sunday • 25 September 2026</p>
+
+      <div class="reveal-card" id="revealCard">
+        <div class="reveal-content">
+          <div class="monogram" id="monogram">A &amp; S</div>
+          <div class="invite-details">
+        <h3>You Are Invited!!</h3>
+        <div class="invite-date">25 September 2026</div>
+        <div class="invite-time">At 9 PM</div>
+    </div>
+          <button id="openInvite" class="gold-btn">Open Invitation</button>
+        </div>
+        <canvas id="scratchCanvas" aria-label="Scratch to reveal invitation"></canvas>
+      </div>
+
+      <p class="scroll-hint">Scroll to explore ↓</p>
+      <div class="ornament ornament-bottom">❦</div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section intro hidden-section">
+      <div class="section-inner">
+        <span class="section-kicker">Bismillah</span>
+        <h2>With the blessings of our families</h2>
+        <div class="divider">✦</div>
+        <p id="introText"></p>
+        <div class="names-script">
+          <span id="brideName">Aliza</span>
+          <b>&amp;</b>
+          <span id="groomName">Salman</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Countdown -->
+    <section class="section countdown-section hidden-section">
+      <div class="section-inner">
+        <span class="section-kicker">Save the Date</span>
+        <h2>Counting the moments</h2>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="section events-section hidden-section" id="events">
+      <div class="section-inner">
+        <span class="section-kicker">Wedding Events</span>
+        <h2>Join us for every celebration</h2>
+        <div id="eventsList" class="events-list"></div>
+      </div>
+    </section>
+
+    <!-- Couple -->
+    <section class="section couple-section hidden-section">
+      <div class="section-inner">
+        <span class="section-kicker">The Couple</span>
+        <h2>Two hearts, one beautiful journey</h2>
+        <div class="couple-grid">
+          <article class="person-card">
+            <img id="bridePhoto" src="assets/images/bride-placeholder.svg" alt="Bride">
+            <h3 id="brideCardName">Aliza</h3>
+            <p id="brideRelation">D/o Mr. Iqbal Parvez</p>
+          </article>
+          <div class="ampersand">&amp;</div>
+          <article class="person-card">
+            <img id="groomPhoto" src="assets/images/groom-placeholder.svg" alt="Groom">
+            <h3 id="groomCardName">Salman</h3>
+            <p id="groomRelation">S/o Mr. &amp; Mrs. ______</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery-section hidden-section">
+      <div class="section-inner">
+        <span class="section-kicker">Memories</span>
+        <h2>A few moments to cherish</h2>
+        <div id="gallery" class="gallery"></div>
+      </div>
+    </section>
+
+    <!-- Venue -->
+    <section class="section venue-section hidden-section" id="venue">
+      <div class="section-inner">
+        <span class="section-kicker">Venue</span>
+        <h2>Where we celebrate</h2>
+        <div class="venue-card">
+          <div class="venue-icon">⌖</div>
+          <h3 id="venueName">Shalimaar Garden</h3>
+          <p id="venueAddress">60 Feet Rd, Ghaus Nagar,
+Kareli, Prayagraj, U.P. 211016</p>
+          <a id="mapBtn" class="gold-btn" href="https://maps.app.goo.gl/6aT8E49VXgjSo7Q16?g_st=aw" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="section rsvp-section hidden-section">
+      <div class="section-inner">
+        <span class="section-kicker">Your Presence Matters</span>
+        <h2>Will you join us?</h2>
+        <p>We would be delighted to celebrate this special day with you.</p>
+        <div class="rsvp-buttons">
+          <a id="whatsappBtn" class="gold-btn" href="#" target="_blank" rel="noopener">Confirm on WhatsApp</a>
+          <button id="shareBtn" class="outline-btn">Share Invitation</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="ornament">❦</div>
+      <h2 id="footerNames">Aliza &amp; Salman</h2>
+      <p>Made with love for a beautiful beginning.</p>
+      <small>© <span id="year"></span> Wedding Invitation</small>
+    </footer>
+  </main>
+
+  <audio id="weddingMusic" loop preload="none">
+    <source src="assets/music/wedding-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
