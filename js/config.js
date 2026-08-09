@@ -67,9 +67,9 @@ const INVITATION = {
   ],
 
   gallery: [
+    "assets/images/gallery-1.svg",
     "assets/images/gallery-2.svg",
     "assets/images/gallery-3.svg",
-    "assets/images/gallery-4.svg",
-    "assets/images/gallery-5.svg"
+    "assets/images/gallery-4.svg"
   ]
 };
