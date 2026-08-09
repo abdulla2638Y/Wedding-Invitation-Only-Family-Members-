@@ -29,7 +29,7 @@ const INVITATION = {
 
   whatsappNumber: "917534894207",
   whatsappMessage:
-    "Assalamu Alaikum! I am pleased to invite you to the wedding celebration of Aliza & Salman. Please join us and bless the couple.",
+    "Assalamu Alaikum! InshaAllah, I'll be there to celebrate this beautiful occasion. May Allah bless the couple with a lifetime of love, happiness, and blessings.❤️",
 
   events: [
     {
@@ -67,7 +67,6 @@ const INVITATION = {
   ],
 
   gallery: [
-    "assets/images/gallery-1.svg",
     "assets/images/gallery-2.svg",
     "assets/images/gallery-3.svg",
     "assets/images/gallery-4.svg",
